@@ -56,7 +56,7 @@ class GroupGenerator(nn.Module):
         It achieves two things: - makes the output value exactly one-hot (since we add then subtract v_soft value)
                                 - makes the gradient equal to v_soft gradient (since we strip all other gradients)
         """
-        sig = 1 / (1 + ((dist_mat - self.th) / tau).exp())
+        sig = (-(dist_mat - self.th) / tau).sigmoid()
         sig_norm = sig / sig.sum(dim=0, keepdim=True)
         v_soft = v @ sig_norm
         return (v - v_soft).detach() + v_soft if hard else v_soft
