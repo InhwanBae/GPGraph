@@ -10,8 +10,8 @@ Jin-Hwi Park, and
 <a href="https://eccv2022.ecva.net/">ECCV 2022</a>
 
 <div align='center'>
-  <img src="img/gpgraph-teaser-animated.webp" width=45%'>
-  <img src="img/gpgraph-hierarchy-animated.webp" width=45%'>
+  <img src="img/gpgraph-teaser-animated.webp" width=45%>
+  <img src="img/gpgraph-hierarchy-animated.webp" width=45%>
 </div>
 
 
@@ -27,7 +27,7 @@ Jin-Hwi Park, and
 <br>All models were trained and tested on Ubuntu 20.04 with Python 3.7 and PyTorch 1.9.0 with CUDA 11.1.
 
 **Dataset**
-<br>Preprocessed [ETH](https://web.archive.org/web/20190715200622/https://vision.ee.ethz.ch/datasets_extra/ewap_dataset_full.tgz) and [UCY](https://graphics.cs.ucy.ac.cy/research/downloads/crowd-data) datasets are included in this repository, under `./dataset/`. 
+<br>Preprocessed [ETH](https://data.vision.ee.ethz.ch/cvl/aem/ewap_dataset_full.tgz) and [UCY](https://graphics.cs.ucy.ac.cy/research/downloads/crowd-data) datasets are included in this repository, under `./dataset/`. 
 The train/validation/test splits are the same as those fond in [Social-GAN](https://github.com/agrimgupta92/sgan).
 
 **Baseline models**
@@ -63,7 +63,12 @@ python test.py
 
 
 ## Citation
-If you find this code useful for your research, please cite our paper :)
+If you find this code useful for your research, please cite our papers :)
+
+[**`DMRGCN (AAAI'21)`**](https://github.com/InhwanBae/DMRGCN) **|** 
+[**`NPSN (CVPR'22)`**](https://github.com/InhwanBae/NPSN) **|** 
+[**`GP-Graph (ECCV'22)`**](https://github.com/InhwanBae/GPGraph) **|** 
+[**`Graph-TERN (AAAI'23)`**](https://github.com/InhwanBae/GraphTERN)
 
 ```bibtex
 @inproceedings{bae2022gpgraph,
@@ -73,6 +78,32 @@ If you find this code useful for your research, please cite our paper :)
   year={2022}
 }
 ```
+<details>
+  <summary>More Information (Click to expand)</summary>
+
+```bibtex
+@article{bae2021dmrgcn,
+  title={Disentangled Multi-Relational Graph Convolutional Network for Pedestrian Trajectory Prediction},
+  author={Bae, Inhwan and Jeon, Hae-Gon},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2021}
+}
+
+@inproceedings{bae2022npsn,
+  title={Non-Probability Sampling Network for Stochastic Human Trajectory Prediction},
+  author={Bae, Inhwan and Park, Jin-Hwi and Jeon, Hae-Gon},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2022}
+}
+
+@article{bae2023graphtern,
+  title={A Set of Control Points Conditioned Pedestrian Trajectory Prediction},
+  author={Bae, Inhwan and Jeon, Hae-Gon},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2023}
+}
+```
+</details>
 
 ### Acknowledgement
 Part of our code is borrowed from [SGCN](https://github.com/shuaishiliu/SGCN/tree/0ff25cedc04852803787196e83c0bb941d724fc2). 
