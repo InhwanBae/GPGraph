@@ -17,6 +17,7 @@
 </p>
 
 <div align='center'>
+  <br>
   <img src="img/gpgraph-teaser-animated.webp" width=45%>
   <img src="img/gpgraph-hierarchy-animated.webp" width=45%>
 </div>
